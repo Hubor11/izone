@@ -207,20 +207,15 @@ REST_FRAMEWORK = {
 }
 
 # 配置数据库
-MYSQL_HOST = os.getenv('IZONE_MYSQL_HOST', '127.0.0.1')
-MYSQL_NAME = os.getenv('IZONE_MYSQL_NAME', 'izone')
-MYSQL_USER = os.getenv('IZONE_MYSQL_USER', 'root')
-MYSQL_PASSWORD = os.getenv('IZONE_MYSQL_PASSWORD', 'python')
-MYSQL_PORT = os.getenv('IZONE_MYSQL_PORT', 3306)
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 修改数据库为MySQL，并进行配置
-        'NAME': MYSQL_NAME,  # 数据库的名称
-        'USER': MYSQL_USER,  # 数据库的用户名
-        'PASSWORD': MYSQL_PASSWORD,  # 数据库的密码
-        'HOST': MYSQL_HOST,
-        'PORT': MYSQL_PORT,
+        'NAME': izone,  # 数据库的名称
+        'USER': root,  # 数据库的用户名
+        'PASSWORD': hubo19930507@,  # 数据库的密码
+        'HOST': 10.19.106.83,
+        'PORT': 3306,
         'OPTIONS': {'charset': 'utf8'}
     }
 }
